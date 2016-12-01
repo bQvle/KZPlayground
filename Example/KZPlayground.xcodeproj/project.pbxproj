@@ -15,6 +15,7 @@
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* KZPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* KZPAppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		CC71D3C91DF01FA900B34453 /* NativeAudioAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71D3C81DF01FA900B34453 /* NativeAudioAsset.m */; };
 		CD877B8419FEB0C50030A67C /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD877B8319FEB0C50030A67C /* avatar.jpg */; };
 		CD8E45BD19F81867007A3C18 /* KZPlaygroundExample.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8E45BB19F81867007A3C18 /* KZPlaygroundExample.m */; };
 		F2B811B7D28E6CE8CE74D78D /* libPods-KZPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A90A57D5C63B495A8C999E1C /* libPods-KZPlayground.a */; };
@@ -42,6 +43,8 @@
 		6E82892C6BA308F332E46010 /* KZPlayground.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KZPlayground.podspec; path = ../KZPlayground.podspec; sourceTree = "<group>"; };
 		9F61326411E606042E17C037 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A90A57D5C63B495A8C999E1C /* libPods-KZPlayground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KZPlayground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC71D3C71DF01FA900B34453 /* NativeAudioAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAudioAsset.h; sourceTree = "<group>"; };
+		CC71D3C81DF01FA900B34453 /* NativeAudioAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAudioAsset.m; sourceTree = "<group>"; };
 		CD877B8319FEB0C50030A67C /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		CD8E45BB19F81867007A3C18 /* KZPlaygroundExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPlaygroundExample.m; sourceTree = "<group>"; };
 		CD8E45BC19F81867007A3C18 /* KZPlaygroundExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPlaygroundExample.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 		6003F593195388D20070C39A /* KZPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				CC71D3C71DF01FA900B34453 /* NativeAudioAsset.h */,
+				CC71D3C81DF01FA900B34453 /* NativeAudioAsset.m */,
 				CD877B8319FEB0C50030A67C /* avatar.jpg */,
 				CD8E45BB19F81867007A3C18 /* KZPlaygroundExample.m */,
 				CD8E45BC19F81867007A3C18 /* KZPlaygroundExample.h */,
@@ -246,6 +251,7 @@
 			files = (
 				6003F59E195388D20070C39A /* KZPAppDelegate.m in Sources */,
 				CD8E45BD19F81867007A3C18 /* KZPlaygroundExample.m in Sources */,
+				CC71D3C91DF01FA900B34453 /* NativeAudioAsset.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
