@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AVFoundation/AVAudioPlayerNode.h>
-#import <AVFoundation/AVAudioEngine.h>
-#import <AVFoundation/AVAudioMixerNode.h>
-#import <AVFoundation/AVAudioFile.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 typedef void(^CompleteCallback)(NSString*);
 
@@ -23,7 +21,7 @@ typedef void(^CompleteCallback)(NSString*);
 	NSNumber *fadeDelay;
 }
 
--(id)init:(NSString*)path withVolume : (NSNumber*)volume withFadeDelay : (NSNumber *)delay;
+-(id)initWithPath:(NSString*)path withVolume : (NSNumber*)volume withFadeDelay : (NSNumber *)delay;
 -(void)play;
 -(void)playWithFade;
 -(void)stop;

@@ -17,12 +17,13 @@ static bool Initialized= NO;
 static AVAudioEngine *engine;
 static AVAudioMixerNode *mixer;
 
--(id) init:(NSString*) path withVolume:(NSNumber*) volume withFadeDelay:(NSNumber *)delay
+-(id) initWithPath:(NSString*) path withVolume:(NSNumber*) volume withFadeDelay:(NSNumber *)delay
 {
     if (!Initialized) {
         engine = [[AVAudioEngine alloc] init];
         mixer = [engine mainMixerNode];
         [engine startAndReturnError:nil];
+        Initialized= YES;
     }
     
     

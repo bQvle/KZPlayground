@@ -19,15 +19,27 @@
 {
   [self backgroundImagePickingExample];
   [self samplePlayground];
+  [self audioTest];
 //   [self sceneKit];
 
 }
 
+
+- (void)audioTest
+{
+    NSString *path = @"snare.mp3";
+    NativeAudioAsset *sound = [[NativeAudioAsset alloc] initWithPath:path withVolume:[NSNumber numberWithFloat:1.0f] withFadeDelay:0];
+    [sound play];
+}
+
+
+
+
 - (void)backgroundImagePickingExample
 {
-  UIImageView *imageView = [UIImageView new];
-  imageView.center = self.worksheetView.center;
-  [self.worksheetView addSubview:imageView];
+  //UIImageView *imageView = [UIImageView new];
+  //imageView.center = self.worksheetView.center;
+  //[self.worksheetView addSubview:imageView];
 
   //KZPAdjustImage(myImage);
   //KZPWhenChanged(myImage, (^(UIImage *img) {
