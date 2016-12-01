@@ -27,15 +27,18 @@
 
 - (void)audioTest
 {
-    NSString *audioID= @"test";
-    NSString *path = @"/Users/asdfasdfasdf/Documents/KZPlayground/Example/KZPlayground/bass.mp3";
-    NativeAudioAsset *sound = [[NativeAudioAsset alloc] initWithPath:path withVolume:[NSNumber numberWithFloat:1.0f] withFadeDelay:0];
-    [sound setCallbackAndId:^(NSString *audioID) {
-        KZPShow(@"play complete callback");
-    } audioId:audioID];
+    
+    
     
     KZPAction(@"Play sound", ^{
         KZPShow(@"playing");
+        NSString *audioID= @"test";
+        NSString *path = @"/Users/asdfasdfasdf/Documents/KZPlayground/Example/KZPlayground/ambient.mp3";
+        NativeAudioAsset *sound = [[NativeAudioAsset alloc] initWithPath:path withVolume:[NSNumber numberWithFloat:1.0f] withFadeDelay:0];
+        [sound setCallbackAndId:^(NSString *audioID) {
+            KZPShow(@"play complete callback");
+        } audioId:audioID];
+        
         [sound play];
         
     });
