@@ -15,6 +15,7 @@ typedef void(^CompleteCallback)(NSString*);
 @interface NativeAudioAsset : NSObject  {
 	AVAudioPlayerNode* player;
 	AVAudioPCMBuffer* PCMBuffer;
+    AVAudioUnitTimePitch* pitcher;
 	NSString* audioId;
 	CompleteCallback finished;
 	NSNumber *initialVolume;
