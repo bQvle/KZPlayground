@@ -33,8 +33,8 @@
     KZPAction(@"Play sound", ^{
         KZPShow(@"playing");
         NSString *audioID= @"test";
-        NSString *path = @"/Users/asdfasdfasdf/Documents/KZPlayground/Example/KZPlayground/ambient.mp3";
-        NativeAudioAsset *sound = [[NativeAudioAsset alloc] initWithPath:path withVolume:[NSNumber numberWithFloat:1.0f] withFadeDelay:0];
+        NSString *path = @"/Users/asdfasdfasdf/Documents/KZPlayground/Example/KZPlayground/snare.mp3";
+        NativeAudioAsset *sound = [[NativeAudioAsset alloc] initWithPath:path withVolume:[NSNumber numberWithFloat:1.0f] withRate:[NSNumber numberWithFloat:2.0f] withFadeDelay:0];
         [sound setCallbackAndId:^(NSString *audioID) {
             KZPShow(@"play complete callback");
         } audioId:audioID];
