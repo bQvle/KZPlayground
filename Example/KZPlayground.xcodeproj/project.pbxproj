@@ -21,6 +21,7 @@
 		CC71D3D11DF0270000B34453 /* bongo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC71D3CC1DF0270000B34453 /* bongo.mp3 */; };
 		CC71D3D21DF0270000B34453 /* highhat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC71D3CD1DF0270000B34453 /* highhat.mp3 */; };
 		CC71D3D31DF0270000B34453 /* snare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC71D3CE1DF0270000B34453 /* snare.mp3 */; };
+		CCEEF0701DF1CF310092D458 /* NativeAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEEF06F1DF1CF310092D458 /* NativeAudio.m */; };
 		CD877B8419FEB0C50030A67C /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD877B8319FEB0C50030A67C /* avatar.jpg */; };
 		CD8E45BD19F81867007A3C18 /* KZPlaygroundExample.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8E45BB19F81867007A3C18 /* KZPlaygroundExample.m */; };
 		F2B811B7D28E6CE8CE74D78D /* libPods-KZPlayground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A90A57D5C63B495A8C999E1C /* libPods-KZPlayground.a */; };
@@ -55,6 +56,11 @@
 		CC71D3CC1DF0270000B34453 /* bongo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bongo.mp3; sourceTree = "<group>"; };
 		CC71D3CD1DF0270000B34453 /* highhat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = highhat.mp3; sourceTree = "<group>"; };
 		CC71D3CE1DF0270000B34453 /* snare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snare.mp3; sourceTree = "<group>"; };
+		CCEEF06E1DF1CF310092D458 /* NativeAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAudio.h; sourceTree = "<group>"; };
+		CCEEF06F1DF1CF310092D458 /* NativeAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAudio.m; sourceTree = "<group>"; };
+		CCEEF0D91DF1D9EC0092D458 /* CDVPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDVPlugin.h; sourceTree = "<group>"; };
+		CCEEF0DA1DF1DAB50092D458 /* CDVInvokedUrlCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDVInvokedUrlCommand.h; sourceTree = "<group>"; };
+		CCEEF0DB1DF1DB400092D458 /* CDVPluginResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDVPluginResult.h; sourceTree = "<group>"; };
 		CD877B8319FEB0C50030A67C /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		CD8E45BB19F81867007A3C18 /* KZPlaygroundExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZPlaygroundExample.m; sourceTree = "<group>"; };
 		CD8E45BC19F81867007A3C18 /* KZPlaygroundExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZPlaygroundExample.h; sourceTree = "<group>"; };
@@ -122,6 +128,11 @@
 		6003F593195388D20070C39A /* KZPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				CCEEF0D91DF1D9EC0092D458 /* CDVPlugin.h */,
+				CCEEF06E1DF1CF310092D458 /* NativeAudio.h */,
+				CCEEF0DB1DF1DB400092D458 /* CDVPluginResult.h */,
+				CCEEF06F1DF1CF310092D458 /* NativeAudio.m */,
+				CCEEF0DA1DF1DAB50092D458 /* CDVInvokedUrlCommand.h */,
 				CC71D3CA1DF0270000B34453 /* ambient.mp3 */,
 				CC71D3CB1DF0270000B34453 /* bass.mp3 */,
 				CC71D3CC1DF0270000B34453 /* bongo.mp3 */,
@@ -270,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* KZPAppDelegate.m in Sources */,
+				CCEEF0701DF1CF310092D458 /* NativeAudio.m in Sources */,
 				CD8E45BD19F81867007A3C18 /* KZPlaygroundExample.m in Sources */,
 				CC71D3C91DF01FA900B34453 /* NativeAudioAsset.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
