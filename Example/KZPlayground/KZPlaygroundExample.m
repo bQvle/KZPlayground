@@ -19,11 +19,7 @@ static AVAudioMixerNode *mixer;
 {
   KZPShow(@"Setup snapshot");
     
-    if (engine == nil){
-        engine = [[AVAudioEngine alloc] init];
-        mixer = [engine mainMixerNode];
-        [engine startAndReturnError:nil];
-    }
+    
 }
 
 
@@ -42,24 +38,29 @@ static AVAudioMixerNode *mixer;
 
 - (void)audioTest
 {
-    KZPShow(@"playing");
+    if (engine == nil){
+        engine = [[AVAudioEngine alloc] init];
+        mixer = [engine mainMixerNode];
+        [engine startAndReturnError:nil];
+        
+        
+    }
+    
     NSString *audioID= @"test";
     NSString *path = @"/Users/asdfasdfasdf/Documents/KZPlayground/Example/KZPlayground/snare.mp3";
-    NativeAudioAsset *sound = [[NativeAudioAsset alloc] initWithPath:path withVolume:[NSNumber numberWithFloat:1.0f] withRate:[NSNumber numberWithFloat:2.0f] withFadeDelay:0];
+    NativeAudioAsset *sound = [[NativeAudioAsset alloc] initWithEngine:engine Path:path Volume:[NSNumber numberWithFloat:1.0f] Rate:[NSNumber numberWithFloat:2.0f]];
     [sound setCallback:^(NSString *audioID) {
         KZPShow(@"play complete callback");
     } audioId:audioID];
     
     KZPAdjustValue(volume, 0, 100).defaultValue(100);
     KZPAnimate(^{
-        [sound setVolume:[NSNumber numberWithFloat:volume*0.01] ];
+        [mixer setVolume:[NSNumber numberWithFloat:volume*0.01].floatValue ];
+        [mixer setOutputVolume:[NSNumber numberWithFloat:volume*0.01].floatValue];
     });
     
     KZPAction(@"Play sound", ^{
-
-        
         [sound play];
-        
     });
     
     

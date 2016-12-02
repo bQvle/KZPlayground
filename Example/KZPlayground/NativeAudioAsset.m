@@ -94,7 +94,7 @@
     }
 }
 
-- (void) setCallbackAndId:(CompleteCallback)cb audioId:(NSString*)aID
+- (void) setCallback:(CompleteCallback)cb audioId:(NSString*)aID
 {
     self->audioId = aID;
     self->finished = cb;
